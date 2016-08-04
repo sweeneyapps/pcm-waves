@@ -3,12 +3,14 @@ const spawn = require('child_process').spawn
 const express = require('express')
 const app = express()
 
+const filename = "piano.mp3"
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/pcm.html')
 })
 
 app.get('/download', (req, res) => {
-  res.sendFile(__dirname + '/piano.mp3')
+  res.sendFile(__dirname + '/' + filename)
 });
 
 app.get('/canvas.js', (req, res) => {
@@ -17,9 +19,8 @@ app.get('/canvas.js', (req, res) => {
 
 app.get('/pcm.js', (req, res) => {
 
-  const filename = "piano.mp3"
-  //const filename = "sin_250Hz_0dBFS_10s.wav"
-  var output = []
+  
+  var output = [] // push into array so client can read in json
 
   var ffmpeg = spawn('ffmpeg', 
     ['-i', filename, 
