@@ -1,0 +1,30 @@
+{
+  "name": "pcm-waves",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getsoundpcm.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweeneyapps/pcm-waves.git"
+  },
+  "keywords": [
+    "pcm",
+    "waves",
+    "sound",
+    "music",
+    "piano"
+  ],
+  "author": "Paul Sweeney Jr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweeneyapps/pcm-waves/issues"
+  },
+  "homepage": "https://github.com/sweeneyapps/pcm-waves#readme"
+}
