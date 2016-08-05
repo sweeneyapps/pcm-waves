@@ -17,7 +17,6 @@ function changeColor(e) {
 }
 
 function reset() {
-  console.log("reset called");
   audio.pause();
   audio.currentTime = 0;
   audio.play();
