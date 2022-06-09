@@ -17,3 +17,6 @@ you can change the sound file by variable filename in app.js
 - better canvas library
 - display file info
 - better UI
+
+## YOLO
+I wanna the YOLO badge. lol
